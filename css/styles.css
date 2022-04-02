@@ -1,0 +1,309 @@
+.navbar {
+  height: 10vh;
+}
+
+.navbar__brand {
+  color: black;
+}
+
+.navbar__brand:hover {
+  color: pink;
+}
+
+.navbar__link {
+  color: black;
+  display: inline-block;
+  position: relative;
+  padding: 0px !important;
+  margin-left: 0rem !important;
+  margin-right: 0rem !important;
+}
+
+@media (min-width: 576px) {
+  .navbar__link {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+  }
+}
+
+.navbar__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: #ffddee;
+  transition: width 0.25s ease-out;
+}
+
+.navbar__link:hover::before {
+  width: 100%;
+}
+.navbar__link:hover {
+  color: black;
+}
+
+.navbar__link-active {
+  color: pink;
+}
+
+.jumbotron {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.jumbotron__icon {
+  color: pink;
+  font-size: 30px;
+  margin: 0px 0.2rem;
+}
+
+.jumbotron__image {
+  max-width: 100%;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+@media (min-width: 576px) {
+  .jumbotron__image {
+    height: 250px;
+    width: 250px;
+  }
+
+  .jumbotron__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .jumbotron__image {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+.jumbotron__text {
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .jumbotron__text {
+    text-align: left;
+  }
+}
+
+.skills {
+  margin-top: 2rem;
+}
+
+@media (min-width: 281px) {
+  .skills {
+    margin-top: 0px;
+  }
+}
+.carousel {
+  margin: 0px auto;
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel__container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.carousel__title {
+  margin-top: 50px;
+  text-align: center;
+}
+.carousel__item-container {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carousel__icon {
+  max-width: 100%;
+  height: 100px;
+  width: 100px;
+  margin: 0px 0.5rem;
+}
+
+.carousel__indicators {
+  flex-wrap: wrap;
+}
+
+.carousel__inner {
+  margin-bottom: 120px;
+}
+
+@media (min-width: 415px) {
+  .carousel__indicators {
+    flex-wrap: nowrap;
+  }
+  .carousel__inner {
+    margin-bottom: 50px;
+  }
+}
+
+.carousel__indicator {
+  text-indent: initial !important;
+  box-sizing: initial !important;
+  flex: none !important;
+  width: initial !important;
+  height: initial !important;
+  background-color: transparent !important;
+  margin: 0px 1rem !important;
+}
+
+.active {
+  color: pink;
+  text-decoration: underline;
+}
+
+/* projects */
+.projects {
+  margin-bottom: 2rem;
+}
+
+.projects__title {
+  text-align: center;
+  margin: 4rem;
+}
+
+/* cards */
+.card {
+  padding: 0px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin: 1rem;
+}
+
+.card__body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__img-container {
+  position: relative;
+}
+
+.card__img-container:hover .card__img {
+  opacity: 0.4;
+}
+
+.card__img-container:hover .card__links {
+  opacity: 1;
+}
+
+.card__img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card__type-container {
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+}
+
+.card__type {
+  color: white;
+  background-color: #cd5e77;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0.3rem 0.5rem;
+  display: inline-block;
+}
+
+.card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card__tag {
+  background-color: #b8cce0;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0.3rem 1rem;
+  margin: 0.5rem;
+}
+
+.card__links {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0);
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.card__icon {
+  font-size: 30px;
+  margin: 0px 0.3rem;
+}
+
+.card__link {
+  color: black;
+}
+
+/* kontakt */
+.contact__title {
+  text-align: center;
+  margin: 4rem 0rem;
+}
+
+.contact__btn-container {
+  text-align: center;
+}
+.contact__btn {
+  margin: auto;
+}
+
+/* typer effect */
+.typed__container {
+  display: inline-block;
+}
+
+.typed__out {
+  overflow: hidden;
+  border-right: 0.15em solid #cd5e77;
+  white-space: nowrap;
+  animation: typing 2s steps(20, end) forwards, blink 0.8s infinite;
+  width: 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #cd5e77;
+  }
+}
