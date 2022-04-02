@@ -58,6 +58,21 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  animation: moveup 1s linear 1;
+  animation-delay: 2.5s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveup {
+  from {
+    transform: translateY(100px);
+    visibility: visible;
+  }
+  to {
+    transform: translateY(0);
+    visibility: visible;
+  }
 }
 
 .jumbotron__icon {
@@ -73,6 +88,7 @@
   width: 200px;
   object-fit: cover;
 }
+
 @media (min-width: 576px) {
   .jumbotron__image {
     height: 250px;
