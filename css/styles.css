@@ -350,7 +350,7 @@ a {
 
 /* kontakt */
 .contact {
-  max-height: 50vh;
+  margin-bottom: 4rem;
 }
 .contact__title {
   text-align: center;
