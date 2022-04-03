@@ -124,10 +124,16 @@ a {
   }
 
   .jumbotron__icons {
+    justify-content: start;
+  }
+}
+
+@media (min-width: 768px) {
+  .jumbotron__icons {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
+    align-items: start;
   }
 }
 
@@ -249,9 +255,14 @@ a {
 }
 
 .projects__index {
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
+@media (min-width: 576px) {
+  .projects__index {
+    margin-top: 8rem;
+  }
+}
 /* cards */
 .card {
   padding: 0px;
