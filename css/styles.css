@@ -1,3 +1,19 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Merriweather", serif;
+  color: black;
+}
+
+a {
+  font-family: "Merriweather", serif;
+}
+
 .navbar {
   height: 10vh;
 }
@@ -7,7 +23,7 @@
 }
 
 .navbar__brand:hover {
-  color: pink;
+  color: black;
 }
 
 .navbar__link {
@@ -45,7 +61,8 @@
 }
 
 .navbar__link-active {
-  color: pink;
+  color: #112240;
+  font-weight: bold;
 }
 
 .jumbotron {
@@ -76,7 +93,7 @@
 }
 
 .jumbotron__icon {
-  color: pink;
+  color: #112240;
   font-size: 30px;
   margin: 0px 0.2rem;
 }
@@ -122,6 +139,24 @@
 
 .skills {
   margin-top: 2rem;
+  margin-bottom: 4rem;
+  visibility: hidden;
+}
+
+@keyframes slideup {
+  from {
+    transform: translateY(250px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .slide-animation {
+    animation: slideup 1s 1;
+    visibility: visible !important;
+  }
 }
 
 @media (min-width: 281px) {
@@ -186,27 +221,38 @@
 }
 
 .active {
-  color: pink;
+  color: #112240;
   text-decoration: underline;
 }
 
 /* projects */
 .projects {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  visibility: hidden;
 }
 
 .projects__title {
   text-align: center;
-  margin: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.projects__index {
+  margin-top: 8rem;
 }
 
 /* cards */
 .card {
   padding: 0px;
-  border-radius: 15px;
+  border-radius: 5px;
   border: none;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   margin: 1rem;
+  transition: transform 250ms linear;
+}
+
+.card:hover {
+  transform: translateY(-10px);
 }
 
 .card__body {
@@ -229,8 +275,8 @@
 }
 
 .card__img {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .card__type-container {
@@ -281,6 +327,9 @@
 }
 
 /* kontakt */
+.contact {
+  max-height: 50vh;
+}
 .contact__title {
   text-align: center;
   margin: 4rem 0rem;
@@ -289,8 +338,17 @@
 .contact__btn-container {
   text-align: center;
 }
+
 .contact__btn {
   margin: auto;
+  background-color: #cd5e77;
+  border-color: #cd5e77;
+}
+
+.contact__btn:hover {
+  background-color: white;
+  color: #cd5e77;
+  border: 1px solid #cd5e77;
 }
 
 /* typer effect */
