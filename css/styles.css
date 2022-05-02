@@ -82,6 +82,21 @@ a {
   align-items: center;
 }
 
+.jumbotron__btn {
+  background-color: #cd5e77;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.jumbotron__btn:hover {
+  color: #cd5e77;
+  background-color: white;
+  border: 1px solid #cd5e77;
+}
+
 .jumbotron__icons {
   display: flex;
   flex-direction: row;
@@ -107,6 +122,10 @@ a {
   color: #112240;
   font-size: 30px;
   margin: 0px 0.2rem;
+}
+
+.jumbotron__icons {
+  margin-top: 1rem;
 }
 
 .jumbotron__image {
