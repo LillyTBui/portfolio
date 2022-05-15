@@ -1,0 +1,75 @@
+/* typer effect */
+.typed__container {
+  display: inline-block;
+}
+
+.typed__out {
+  overflow: hidden;
+  border-right: 0.15em solid #cd5e77;
+  white-space: nowrap;
+  animation: typing 2s steps(20, end) forwards, blink 0.8s infinite;
+  width: 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #cd5e77;
+  }
+}
+
+#navMenu > span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  border-radius: 9999px;
+  background-color: black;
+}
+
+@media (min-width: 576px) {
+  #navMenu {
+    display: none;
+  }
+}
+
+#navMenu > span:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+#navMenu,
+#navMenu > span {
+  transition: all 0.4s ease-in-out;
+}
+
+#navMenu.active {
+  transition-delay: 0.8s;
+  transform: rotate(45deg);
+}
+
+#navMenu.active > span:nth-child(2) {
+  width: 0;
+}
+
+#navMenu.active > span:nth-child(1),
+#navMenu.active > span:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+#navMenu.active > span:nth-child(1) {
+  transform: translateY(9px);
+}
+
+#navMenu.active > span:nth-child(3) {
+  transform: translateY(-9px) rotate(90deg);
+}

@@ -1,0 +1,21 @@
+.skills {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  visibility: hidden;
+}
+
+@keyframes slideup {
+  from {
+    transform: translateY(250px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .slide-animation {
+    animation: slideup 1s 1;
+    visibility: visible !important;
+  }
+}

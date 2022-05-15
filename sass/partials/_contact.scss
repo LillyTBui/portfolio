@@ -1,0 +1,23 @@
+.contact {
+  margin-bottom: 4rem;
+}
+.contact__title {
+  text-align: center;
+  margin: 4rem 0rem;
+}
+
+.contact__btn-container {
+  text-align: center;
+}
+
+.contact__btn {
+  margin: auto;
+  background-color: #cd5e77;
+  border-color: #cd5e77;
+}
+
+.contact__btn:hover {
+  background-color: white;
+  color: #cd5e77;
+  border: 1px solid #cd5e77;
+}

@@ -1,0 +1,20 @@
+.projects {
+  margin-bottom: 4rem;
+  visibility: hidden;
+}
+
+.projects__title {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.projects__index {
+  margin-top: 4rem;
+}
+
+@media (min-width: 576px) {
+  .projects__index {
+    margin-top: 8rem;
+  }
+}
