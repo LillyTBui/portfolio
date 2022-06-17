@@ -1,23 +1,13 @@
-import { observer } from "./components/observer.js";
+const navButton = document.querySelector(".primary-navigation__button");
+const nav = document.querySelector(".primary-navigation");
 
-const section = document.querySelector(".skills");
-const projectSection = document.querySelector(".projects");
-section.classList.remove("slide-animation");
-projectSection.classList.remove("slide-animation");
-
-observer.observe(section);
-observer.observe(projectSection);
-
-const navMenu = document.querySelector("#navMenu");
-const navItems = document.querySelector("#navbarSupportedContent");
-
-navMenu.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-  if (navItems.classList.contains("show")) {
-    navItems.classList.toggle("show");
+navButton.addEventListener("click", () => {
+  const visibility = nav.getAttribute("data-visible");
+  if (visibility === "false") {
+    nav.setAttribute("data-visible", true);
+    navButton.setAttribute("aria-expanded", true);
   } else {
-    setTimeout(() => {
-      navItems.classList.toggle("show");
-    }, "1500");
+    nav.setAttribute("data-visible", false);
+    navButton.setAttribute("aria-expanded", false);
   }
 });
