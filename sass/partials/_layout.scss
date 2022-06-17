@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -38,6 +48,12 @@ h4 {
 
 a {
   font-family: "Merriweather", serif;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
 }
 
 .active {
