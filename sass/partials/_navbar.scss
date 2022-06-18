@@ -4,7 +4,15 @@
 
   &__header {
     justify-content: space-between;
-    padding: 2rem 1.5rem;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    // border-bottom: 1px solid lightgray;
+  }
+
+  &__brand {
+    margin: 0rem clamp(1rem, 4vw, 3.5rem);
+    font-size: $fs-700;
+    font-family: "Fascinate", cursive;
   }
 
   &__link {
@@ -26,8 +34,8 @@
     left: 0;
     bottom: 0;
     width: 0;
-    height: 4px;
-    background-color: rgba(0, 0, 0, 0.229);
+    height: 3px;
+    background-color: hsl(350, 100%, 88%);
     transition: width 0.25s ease-out;
   }
 
@@ -38,7 +46,8 @@
 
 @media (max-width: 35em) {
   .primary-navigation {
-    background-color: hsl(350, 100%, 88%);
+    background-color: white;
+    opacity: 0.98;
     position: fixed;
     z-index: 1000;
     inset: 0 0 0 40%;
@@ -51,7 +60,7 @@
     &__button {
       position: fixed;
       z-index: 2000;
-      top: 2rem;
+      top: 1rem;
       right: 1rem;
     }
 
@@ -64,7 +73,7 @@
       background-color: black;
     }
 
-    @media (min-width: 576px) {
+    @media (min-width: 35em) {
       &__button {
         display: none;
       }
@@ -107,6 +116,11 @@
   }
 }
 
+@media (min-width: 35em) {
+  .primary-navigation {
+    padding-inline: clamp(1rem, 4vw, 3.5rem);
+  }
+}
 // .navbar {
 //   height: 10vh;
 // }

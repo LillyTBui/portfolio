@@ -5,6 +5,26 @@
   gap: var(--gap, 1rem);
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-700 {
+  font-size: 1.5rem;
+}
+
+.fs-600 {
+  font-size: 1rem;
+}
+
+.fs-400 {
+  font-size: 0.9375rem;
+}
+
+.fs-300 {
+  font-size: 1rem;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -15,6 +35,16 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
 }
 
 /* remove animations for people who've turned them off */
@@ -33,7 +63,8 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
   min-height: 100vh;
 }
@@ -41,9 +72,17 @@ body {
 h1,
 h2,
 h3,
-h4 {
-  font-family: "Merriweather", serif;
+h4,
+p {
+  font-weight: 400;
   color: black;
+}
+
+input,
+label,
+button,
+textarea {
+  font: inherit;
 }
 
 .sr-only {
@@ -59,18 +98,12 @@ h4 {
 }
 
 a {
-  font-family: "Merriweather", serif;
   text-decoration: none;
   color: black;
 }
 
 a:hover {
   color: black;
-}
-
-.active {
-  color: #112240;
-  text-decoration: underline;
 }
 
 .primary-navigation {
@@ -82,7 +115,16 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.primary-navigation__brand {
+  margin: 0rem clamp(1rem, 4vw, 3.5rem);
+  font-size: 1.5rem;
+  font-family: "Fascinate", cursive;
 }
 
 .primary-navigation__link {
@@ -104,8 +146,8 @@ a:hover {
   left: 0;
   bottom: 0;
   width: 0;
-  height: 4px;
-  background-color: rgba(0, 0, 0, 0.229);
+  height: 3px;
+  background-color: #ffc2cc;
   -webkit-transition: width 0.25s ease-out;
   transition: width 0.25s ease-out;
 }
@@ -116,7 +158,8 @@ a:hover {
 
 @media (max-width: 35em) {
   .primary-navigation {
-    background-color: #ffc2cc;
+    background-color: white;
+    opacity: 0.98;
     position: fixed;
     z-index: 1000;
     inset: 0 0 0 40%;
@@ -136,7 +179,7 @@ a:hover {
   .primary-navigation__button {
     position: fixed;
     z-index: 2000;
-    top: 2rem;
+    top: 1rem;
     right: 1rem;
   }
   .primary-navigation__button > span {
@@ -149,7 +192,7 @@ a:hover {
   }
 }
 
-@media (max-width: 35em) and (min-width: 576px) {
+@media (max-width: 35em) and (min-width: 35em) {
   .primary-navigation__button {
     display: none;
   }
@@ -189,6 +232,12 @@ a:hover {
   .primary-navigation[data-visible="true"] {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+}
+
+@media (min-width: 35em) {
+  .primary-navigation {
+    padding-inline: clamp(1rem, 4vw, 3.5rem);
   }
 }
 
@@ -457,6 +506,15 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.jumbotron__subtitle {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.jumbotron__p {
+  margin-bottom: 1.5rem;
 }
 
 .jumbotron__btn {
