@@ -3,8 +3,12 @@
   display: flex;
   align-items: center;
 
+  &__title {
+    font-weight: 700;
+  }
+
   &__subtitle {
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 0.5rem;
   }
 

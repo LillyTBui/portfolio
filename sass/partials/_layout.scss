@@ -1,7 +1,7 @@
-// - Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
-// - Weights: 300, 400, 600
+$ff-sans-normal: "Open Sans", sans-serif;
+$ff-serif-heading: "Playfair Display", serif;
+$ff-sans-sub-heading: "Josefin Sans", sans-serif;
 
-$ff-sans-normal: "Josefin Sans", sans-serif;
 $fs-300: 1rem;
 $fs-400: 0.9375rem;
 $fs-600: 1rem;
@@ -86,7 +86,17 @@ h3,
 h4,
 p {
   font-weight: 400;
-  color: black;
+}
+
+h1,
+h2,
+a {
+  font-family: $ff-serif-heading;
+}
+
+h3,
+h4 {
+  font-family: $ff-sans-sub-heading;
 }
 
 input,
