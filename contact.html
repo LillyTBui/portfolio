@@ -25,7 +25,9 @@
   </head>
   <body>
     <header class="primary-navigation__header flex">
-      <a href="index.html" class="primary-navigation__brand">Lilly Thi Bui</a>
+      <a href="index.html" class="logo primary-navigation__brand"
+        >Lilly Thi Bui</a
+      >
       <nav>
         <div
           class="primary-navigation__button"
@@ -52,65 +54,68 @@
         </ul>
       </nav>
     </header>
-    <div class="container contact">
-      <div class="row">
-        <h2 class="contact__title">Kontakt</h2>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-5">
-          <form
-            action="https://formsubmit.co/lillytbui@gmail.com"
-            method="POST"
-          >
-            <div class="mb-3">
-              <label for="email" class="form-label">Epost-adresse</label>
+    <main id="main">
+      <div class="container contact">
+        <div class="row">
+          <h2 class="contact__title">Kontakt</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-5">
+            <form
+              action="https://formsubmit.co/lillytbui@gmail.com"
+              method="POST"
+            >
+              <div class="mb-3">
+                <label for="email" class="form-label">Epost-adresse</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="emne" class="form-label">Emne</label>
+                <input
+                  type="text"
+                  name="emne"
+                  class="form-control"
+                  id="emne"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="melding" class="form-label">Melding</label>
+                <textarea
+                  name="melding"
+                  id="melding"
+                  rows="8"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
               <input
-                type="email"
-                name="email"
-                class="form-control"
-                id="email"
-                required
+                type="hidden"
+                name="_subject"
+                value="Ny melding fra personlig nettside!"
               />
-            </div>
-            <div class="mb-3">
-              <label for="emne" class="form-label">Emne</label>
-              <input
-                type="text"
-                name="emne"
-                class="form-control"
-                id="emne"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="melding" class="form-label">Melding</label>
-              <textarea
-                name="melding"
-                id="melding"
-                rows="8"
-                class="form-control"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="hidden"
-              name="_subject"
-              value="Ny melding fra personlig nettside!"
-            />
-            <!-- <input
+              <!-- <input
               type="hidden"
               name="_next"
               value="https://yourdomain.co/thanks.html"
             /> -->
-            <div class="mb-3 contact__btn-container">
-              <button type="submit" class="btn btn-primary contact__btn">
-                Send
-              </button>
-            </div>
-          </form>
+              <div class="mb-3 contact__btn-container">
+                <button type="submit" class="btn btn-primary contact__btn">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

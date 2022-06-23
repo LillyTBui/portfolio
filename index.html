@@ -25,7 +25,9 @@
   </head>
   <body>
     <header class="primary-navigation__header flex">
-      <a href="index.html" class="primary-navigation__brand">Lilly Thi Bui</a>
+      <a href="index.html" class="logo primary-navigation__brand"
+        >Lilly Thi Bui</a
+      >
       <nav>
         <div
           class="primary-navigation__button"
@@ -52,254 +54,257 @@
         </ul>
       </nav>
     </header>
+    <main id="main">
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div
+              class="col-12 mt-4 order-sm-2 col-sm-5 col-md-5 d-flex justify-content-center align-self-sm-center"
+            >
+              <img
+                src="images/Untitled_Artwork.png"
+                alt="digital selfportrait"
+                class="jumbotron__image"
+              />
+            </div>
+            <div
+              class="col-8 mt-4 order-sm-1 col-sm-7 col-md-5 align-self-sm-center jumbotron__text"
+            >
+              <h3 class="uppercase fs-300 jumbotron__subtitle">
+                Student i webutvikling
+              </h3>
+              <div class="typed__container">
+                <h1 class="jumbotron__title typed__out">
+                  Hei, jeg heter Lilly!
+                </h1>
+              </div>
+              <p class="jumbotron__p">
+                Jeg studerer webutvikling ved Noroff og er ferdig med studiene i
+                oktober. Jeg interesserer meg for programmering og design.
+              </p>
+              <a href="/projects.html" class="jumbotron__btn">Prosjekter</a>
+            </div>
+            <div class="col-12 order-sm-3 col-md-1 jumbotron__icons">
+              <a href="https://www.linkedin.com/in/lilly-thi-bui-479920233">
+                <i class="fa-brands fa-linkedin jumbotron__icon"></i
+              ></a>
+              <a href="https://github.com/LillyTBui">
+                <i class="fa-brands fa-github-square jumbotron__icon"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container skills">
+        <h4 class="carousel__title">Skills</h4>
+        <div class="row">
+          <div class="col-12 carousel__container">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators carousel__indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active carousel__indicator"
+                  aria-current="true"
+                >
+                  HTML & CSS
+                </button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  class="carousel__indicator"
+                >
+                  JavasScript
+                </button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  class="carousel__indicator"
+                >
+                  Backend
+                </button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="3"
+                  class="carousel__indicator"
+                >
+                  Design
+                </button>
+              </div>
+              <div class="carousel-inner carousel__inner">
+                <div class="carousel-item active">
+                  <div class="carousel__item-container">
+                    <img
+                      src="images/html-icon.png"
+                      alt="HTML icon"
+                      class="carousel__icon"
+                    />
+                    <img
+                      src="images/css-icon.png"
+                      alt="CSS icon"
+                      class="carousel__icon"
+                    />
+                    <img
+                      src="images/sass-icon.png"
+                      alt="Sass icon"
+                      class="carousel__icon"
+                    />
+                  </div>
+                </div>
 
-    <div class="jumbotron">
-      <div class="container">
+                <div class="carousel-item">
+                  <div class="carousel__item-container">
+                    <img
+                      src="images/javaScript-icon.png"
+                      alt="JavasScript icon"
+                      class="carousel__icon"
+                    />
+                    <img
+                      src="images/react-icon.svg"
+                      alt="React icon"
+                      class="carousel__icon"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel__item-container">
+                    <img
+                      src="images/wordpress-icon.png"
+                      alt="Wordpress icon"
+                      class="carousel__icon"
+                    />
+                    <img
+                      src="images/Strapi-logo.svg"
+                      alt="Strapi logo"
+                      class="carousel__icon"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel__item-container">
+                    <img
+                      src="images/procreate-icon.png"
+                      alt="Procreate icon"
+                      class="carousel__icon"
+                    />
+                    <img
+                      src="images/Adobe-xd-icon.png"
+                      alt="Adobe XD icon"
+                      class="carousel__icon"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container projects projects__index">
+        <h4 class="projects__title">Prosjekter</h4>
         <div class="row justify-content-center">
-          <div
-            class="col-12 mt-4 order-sm-2 col-sm-5 col-md-5 d-flex justify-content-center align-self-sm-center"
-          >
-            <img
-              src="images/Untitled_Artwork.png"
-              alt="digital selfportrait"
-              class="jumbotron__image"
-            />
-          </div>
-          <div
-            class="col-8 mt-4 order-sm-1 col-sm-7 col-md-5 align-self-sm-center jumbotron__text"
-          >
-            <h3 class="uppercase fs-300 jumbotron__subtitle">
-              Student i webutvikling
-            </h3>
-            <div class="typed__container">
-              <h1 class="jumbotron__title typed__out">Hei, jeg heter Lilly!</h1>
+          <div class="card" style="width: 20rem">
+            <div class="card__img-container">
+              <img
+                src="images/happy-tourist.png"
+                class="card-img-top card__img"
+                alt="Picture of homepage of the happy tourist"
+              />
+              <div class="card__links">
+                <a
+                  href="https://github.com/LillyTBui/project-exam1"
+                  class="card__link"
+                  ><i class="fa-brands fa-github card__icon"></i
+                ></a>
+                <a href="https://happy-tourist.netlify.app/" class="card__link"
+                  ><i class="fa-solid fa-up-right-from-square card__icon"></i
+                ></a>
+              </div>
+              <div class="card__type-container">
+                <p class="card__type">Blogg</p>
+              </div>
             </div>
-            <p class="jumbotron__p">
-              Jeg studerer webutvikling ved Noroff og er ferdig med studiene i
-              oktober. Jeg interesserer meg for programmering og design.
-            </p>
-            <a href="/projects.html" class="jumbotron__btn">Prosjekter</a>
-          </div>
-          <div class="col-12 order-sm-3 col-md-1 jumbotron__icons">
-            <a href="https://www.linkedin.com/in/lilly-thi-bui-479920233">
-              <i class="fa-brands fa-linkedin jumbotron__icon"></i
-            ></a>
-            <a href="https://github.com/LillyTBui">
-              <i class="fa-brands fa-github-square jumbotron__icon"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container skills">
-      <h4 class="carousel__title">Skills</h4>
-      <div class="row">
-        <div class="col-12 carousel__container">
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators carousel__indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active carousel__indicator"
-                aria-current="true"
-              >
-                HTML & CSS
-              </button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                class="carousel__indicator"
-              >
-                JavasScript
-              </button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                class="carousel__indicator"
-              >
-                Backend
-              </button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="3"
-                class="carousel__indicator"
-              >
-                Design
-              </button>
+            <div class="card-body card__body">
+              <h5 class="card__title">The Happy Tourist</h5>
+              <p class="card__text">Skole prosjekt</p>
+              <div class="card__tags">
+                <p class="card__tag">HTML</p>
+                <p class="card__tag">CSS</p>
+                <p class="card__tag">JS</p>
+                <p class="card__tag">Wordpress</p>
+              </div>
             </div>
-            <div class="carousel-inner carousel__inner">
-              <div class="carousel-item active">
-                <div class="carousel__item-container">
-                  <img
-                    src="images/html-icon.png"
-                    alt="HTML icon"
-                    class="carousel__icon"
-                  />
-                  <img
-                    src="images/css-icon.png"
-                    alt="CSS icon"
-                    class="carousel__icon"
-                  />
-                  <img
-                    src="images/sass-icon.png"
-                    alt="Sass icon"
-                    class="carousel__icon"
-                  />
-                </div>
+          </div>
+          <div class="card" style="width: 20rem">
+            <div class="card__img-container">
+              <img
+                src="images/duck_surfer.png"
+                class="card-img-top card__img"
+                alt="Picture of homepage of Duck surfer"
+              />
+              <div class="card__links">
+                <a
+                  href="https://github.com/LillyTBui/Duck-surfer"
+                  class="card__link"
+                  ><i class="fa-brands fa-github card__icon"></i
+                ></a>
+                <a href="https://duck-surfer.netlify.app/" class="card__link"
+                  ><i class="fa-solid fa-up-right-from-square card__icon"></i
+                ></a>
               </div>
-
-              <div class="carousel-item">
-                <div class="carousel__item-container">
-                  <img
-                    src="images/javaScript-icon.png"
-                    alt="JavasScript icon"
-                    class="carousel__icon"
-                  />
-                  <img
-                    src="images/react-icon.svg"
-                    alt="React icon"
-                    class="carousel__icon"
-                  />
-                </div>
+              <div class="card__type-container">
+                <p class="card__type">Spill</p>
               </div>
-              <div class="carousel-item">
-                <div class="carousel__item-container">
-                  <img
-                    src="images/wordpress-icon.png"
-                    alt="Wordpress icon"
-                    class="carousel__icon"
-                  />
-                  <img
-                    src="images/Strapi-logo.svg"
-                    alt="Strapi logo"
-                    class="carousel__icon"
-                  />
-                </div>
+            </div>
+            <div class="card-body card__body">
+              <h5 class="card__title">Duck Surfer</h5>
+              <p class="card__text">Skole prosjekt</p>
+              <div class="card__tags">
+                <p class="card__tag">HTML</p>
+                <p class="card__tag">CSS</p>
+                <p class="card__tag">JS</p>
+                <p class="card__tag">Phaser.js</p>
               </div>
-              <div class="carousel-item">
-                <div class="carousel__item-container">
-                  <img
-                    src="images/procreate-icon.png"
-                    alt="Procreate icon"
-                    class="carousel__icon"
-                  />
-                  <img
-                    src="images/Adobe-xd-icon.png"
-                    alt="Adobe XD icon"
-                    class="carousel__icon"
-                  />
-                </div>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem">
+            <div class="card__img-container">
+              <img
+                src="images/community-museum.png"
+                class="card-img-top card__img"
+                alt="Picture of homepage of the community science museum"
+              />
+              <div class="card__links">
+                <a
+                  href="https://github.com/LillyTBui/Semesterproject1"
+                  class="card__link"
+                  ><i class="fa-brands fa-github card__icon"></i
+                ></a>
+                <a href="https://museumscience.netlify.app/" class="card__link"
+                  ><i class="fa-solid fa-up-right-from-square card__icon"></i
+                ></a>
+              </div>
+              <div class="card__type-container">
+                <p class="card__type">Nettside</p>
+              </div>
+            </div>
+            <div class="card-body card__body">
+              <h5 class="card__title">Community Science Museum</h5>
+              <p class="card__text">Skole prosjekt</p>
+              <div class="card__tags">
+                <p class="card__tag">HTML</p>
+                <p class="card__tag">CSS</p>
+                <p class="card__tag">JS</p>
+                <p class="card__tag">Phaser.js</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container projects projects__index">
-      <h4 class="projects__title">Prosjekter</h4>
-      <div class="row justify-content-center">
-        <div class="card" style="width: 20rem">
-          <div class="card__img-container">
-            <img
-              src="images/happy-tourist.png"
-              class="card-img-top card__img"
-              alt="Picture of homepage of the happy tourist"
-            />
-            <div class="card__links">
-              <a
-                href="https://github.com/LillyTBui/project-exam1"
-                class="card__link"
-                ><i class="fa-brands fa-github card__icon"></i
-              ></a>
-              <a href="https://happy-tourist.netlify.app/" class="card__link"
-                ><i class="fa-solid fa-up-right-from-square card__icon"></i
-              ></a>
-            </div>
-            <div class="card__type-container">
-              <p class="card__type">Blogg</p>
-            </div>
-          </div>
-          <div class="card-body card__body">
-            <h5 class="card__title">The Happy Tourist</h5>
-            <p class="card__text">Skole prosjekt</p>
-            <div class="card__tags">
-              <p class="card__tag">HTML</p>
-              <p class="card__tag">CSS</p>
-              <p class="card__tag">JS</p>
-              <p class="card__tag">Wordpress</p>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 20rem">
-          <div class="card__img-container">
-            <img
-              src="images/duck_surfer.png"
-              class="card-img-top card__img"
-              alt="Picture of homepage of Duck surfer"
-            />
-            <div class="card__links">
-              <a
-                href="https://github.com/LillyTBui/Duck-surfer"
-                class="card__link"
-                ><i class="fa-brands fa-github card__icon"></i
-              ></a>
-              <a href="https://duck-surfer.netlify.app/" class="card__link"
-                ><i class="fa-solid fa-up-right-from-square card__icon"></i
-              ></a>
-            </div>
-            <div class="card__type-container">
-              <p class="card__type">Spill</p>
-            </div>
-          </div>
-          <div class="card-body card__body">
-            <h5 class="card__title">Duck Surfer</h5>
-            <p class="card__text">Skole prosjekt</p>
-            <div class="card__tags">
-              <p class="card__tag">HTML</p>
-              <p class="card__tag">CSS</p>
-              <p class="card__tag">JS</p>
-              <p class="card__tag">Phaser.js</p>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 20rem">
-          <div class="card__img-container">
-            <img
-              src="images/community-museum.png"
-              class="card-img-top card__img"
-              alt="Picture of homepage of the community science museum"
-            />
-            <div class="card__links">
-              <a
-                href="https://github.com/LillyTBui/Semesterproject1"
-                class="card__link"
-                ><i class="fa-brands fa-github card__icon"></i
-              ></a>
-              <a href="https://museumscience.netlify.app/" class="card__link"
-                ><i class="fa-solid fa-up-right-from-square card__icon"></i
-              ></a>
-            </div>
-            <div class="card__type-container">
-              <p class="card__type">Nettside</p>
-            </div>
-          </div>
-          <div class="card-body card__body">
-            <h5 class="card__title">Community Science Museum</h5>
-            <p class="card__text">Skole prosjekt</p>
-            <div class="card__tags">
-              <p class="card__tag">HTML</p>
-              <p class="card__tag">CSS</p>
-              <p class="card__tag">JS</p>
-              <p class="card__tag">Phaser.js</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

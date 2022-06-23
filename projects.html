@@ -23,9 +23,11 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Portfolio | Projects</title>
   </head>
-  <body>
+  <body class="body">
     <header class="primary-navigation__header flex">
-      <a href="index.html" class="primary-navigation__brand">Lilly Thi Bui</a>
+      <a href="index.html" class="logo primary-navigation__brand"
+        >Lilly Thi Bui</a
+      >
       <nav>
         <div
           class="primary-navigation__button"
@@ -52,108 +54,111 @@
         </ul>
       </nav>
     </header>
-    <div class="container projects">
-      <h2 class="projects__title">Prosjekter</h2>
-      <div class="row justify-content-center">
-        <div class="card" style="width: 20rem">
-          <div class="card__img-container">
-            <img
-              src="images/happy-tourist.png"
-              class="card-img-top card__img"
-              alt="Picture of homepage of the happy tourist"
-            />
-            <div class="card__links">
-              <a
-                href="https://github.com/LillyTBui/project-exam1"
-                class="card__link"
-                ><i class="fa-brands fa-github card__icon"></i
-              ></a>
-              <a href="https://happy-tourist.netlify.app/" class="card__link"
-                ><i class="fa-solid fa-up-right-from-square card__icon"></i
-              ></a>
+    <main id="main">
+      <div class="container projects">
+        <h2 class="projects__title">Prosjekter</h2>
+        <div class="row justify-content-center">
+          <div class="card" style="width: 20rem">
+            <div class="card__img-container">
+              <img
+                src="images/happy-tourist.png"
+                class="card-img-top card__img"
+                alt="Picture of homepage of the happy tourist"
+              />
+              <div class="card__links">
+                <a
+                  href="https://github.com/LillyTBui/project-exam1"
+                  class="card__link"
+                  ><i class="fa-brands fa-github card__icon"></i
+                ></a>
+                <a href="https://happy-tourist.netlify.app/" class="card__link"
+                  ><i class="fa-solid fa-up-right-from-square card__icon"></i
+                ></a>
+              </div>
+              <div class="card__type-container">
+                <p class="card__type">Blogg</p>
+              </div>
             </div>
-            <div class="card__type-container">
-              <p class="card__type">Blogg</p>
-            </div>
-          </div>
-          <div class="card-body card__body">
-            <h5 class="card__title">The Happy Tourist</h5>
-            <p class="card__text">Skole prosjekt</p>
-            <div class="card__tags">
-              <p class="card__tag">HTML</p>
-              <p class="card__tag">CSS</p>
-              <p class="card__tag">JS</p>
-              <p class="card__tag">Wordpress</p>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 20rem">
-          <div class="card__img-container">
-            <img
-              src="images/duck_surfer.png"
-              class="card-img-top card__img"
-              alt="Picture of homepage of Duck surfer"
-            />
-            <div class="card__links">
-              <a
-                href="https://github.com/LillyTBui/Duck-surfer"
-                class="card__link"
-                ><i class="fa-brands fa-github card__icon"></i
-              ></a>
-              <a href="https://duck-surfer.netlify.app/" class="card__link"
-                ><i class="fa-solid fa-up-right-from-square card__icon"></i
-              ></a>
-            </div>
-            <div class="card__type-container">
-              <p class="card__type">Spill</p>
+            <div class="card-body card__body">
+              <h5 class="card__title">The Happy Tourist</h5>
+              <p class="card__text">Skole prosjekt</p>
+              <div class="card__tags">
+                <p class="card__tag">HTML</p>
+                <p class="card__tag">CSS</p>
+                <p class="card__tag">JS</p>
+                <p class="card__tag">Wordpress</p>
+              </div>
             </div>
           </div>
-          <div class="card-body card__body">
-            <h5 class="card__title">Duck Surfer</h5>
-            <p class="card__text">Skole prosjekt</p>
-            <div class="card__tags">
-              <p class="card__tag">HTML</p>
-              <p class="card__tag">CSS</p>
-              <p class="card__tag">JS</p>
-              <p class="card__tag">Phaser.js</p>
+          <div class="card" style="width: 20rem">
+            <div class="card__img-container">
+              <img
+                src="images/duck_surfer.png"
+                class="card-img-top card__img"
+                alt="Picture of homepage of Duck surfer"
+              />
+              <div class="card__links">
+                <a
+                  href="https://github.com/LillyTBui/Duck-surfer"
+                  class="card__link"
+                  ><i class="fa-brands fa-github card__icon"></i
+                ></a>
+                <a href="https://duck-surfer.netlify.app/" class="card__link"
+                  ><i class="fa-solid fa-up-right-from-square card__icon"></i
+                ></a>
+              </div>
+              <div class="card__type-container">
+                <p class="card__type">Spill</p>
+              </div>
+            </div>
+            <div class="card-body card__body">
+              <h5 class="card__title">Duck Surfer</h5>
+              <p class="card__text">Skole prosjekt</p>
+              <div class="card__tags">
+                <p class="card__tag">HTML</p>
+                <p class="card__tag">CSS</p>
+                <p class="card__tag">JS</p>
+                <p class="card__tag">Phaser.js</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="card" style="width: 20rem">
-          <div class="card__img-container">
-            <img
-              src="images/community-museum.png"
-              class="card-img-top card__img"
-              alt="Picture of homepage of the community science museum"
-            />
-            <div class="card__links">
-              <a
-                href="https://github.com/LillyTBui/Semesterproject1"
-                class="card__link"
-                ><i class="fa-brands fa-github card__icon"></i
-              ></a>
-              <a href="https://museumscience.netlify.app/" class="card__link"
-                ><i class="fa-solid fa-up-right-from-square card__icon"></i
-              ></a>
+          <div class="card" style="width: 20rem">
+            <div class="card__img-container">
+              <img
+                src="images/community-museum.png"
+                class="card-img-top card__img"
+                alt="Picture of homepage of the community science museum"
+              />
+              <div class="card__links">
+                <a
+                  href="https://github.com/LillyTBui/Semesterproject1"
+                  class="card__link"
+                  ><i class="fa-brands fa-github card__icon"></i
+                ></a>
+                <a href="https://museumscience.netlify.app/" class="card__link"
+                  ><i class="fa-solid fa-up-right-from-square card__icon"></i
+                ></a>
+              </div>
+              <div class="card__type-container">
+                <p class="card__type">Nettside</p>
+              </div>
             </div>
-            <div class="card__type-container">
-              <p class="card__type">Nettside</p>
-            </div>
-          </div>
-          <div class="card-body card__body">
-            <h5 class="card__title">Community Science Museum</h5>
-            <p class="card__text">Skole prosjekt</p>
-            <div class="card__tags">
-              <p class="card__tag">HTML</p>
-              <p class="card__tag">CSS</p>
-              <p class="card__tag">JS</p>
-              <p class="card__tag">Phaser.js</p>
+            <div class="card-body card__body">
+              <h5 class="card__title">Community Science Museum</h5>
+              <p class="card__text">Skole prosjekt</p>
+              <div class="card__tags">
+                <p class="card__tag">HTML</p>
+                <p class="card__tag">CSS</p>
+                <p class="card__tag">JS</p>
+                <p class="card__tag">Phaser.js</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

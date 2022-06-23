@@ -131,3 +131,10 @@ a:hover {
 //   color: #112240;
 //   text-decoration: underline;
 // }
+
+@media (max-width: 35em) {
+  .blur {
+    background-color: white;
+    filter: blur(3px);
+  }
+}

@@ -2,3 +2,14 @@
   display: flex;
   gap: var(--gap, 1rem);
 }
+
+.underline {
+  padding-bottom: 0.5rem;
+}
+
+.underline:hover {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+.underline > .active {
+  border-color: rgba(0, 0, 0);
+}

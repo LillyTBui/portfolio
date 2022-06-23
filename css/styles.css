@@ -5,6 +5,14 @@
   gap: var(--gap, 1rem);
 }
 
+.underline {
+  border-bottom: 1px solid black;
+}
+
+.underline > .active {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -116,6 +124,14 @@ a:hover {
   color: black;
 }
 
+@media (max-width: 35em) {
+  .blur {
+    background-color: white;
+    -webkit-filter: blur(3px);
+            filter: blur(3px);
+  }
+}
+
 .primary-navigation {
   --gap: 1.5rem;
   list-style: none;
@@ -170,7 +186,6 @@ a:hover {
 @media (max-width: 35em) {
   .primary-navigation {
     background-color: white;
-    opacity: 0.98;
     position: fixed;
     z-index: 1000;
     inset: 0 0 0 40%;
