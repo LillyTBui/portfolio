@@ -3,13 +3,30 @@
   gap: var(--gap, 1rem);
 }
 
-.underline {
-  padding-bottom: 0.5rem;
+.uppercase {
+  text-transform: uppercase;
 }
 
-.underline:hover {
-  border-color: rgba(0, 0, 0, 0.5);
+.fs-700 {
+  font-size: $fs-700;
 }
-.underline > .active {
-  border-color: rgba(0, 0, 0);
+
+.fs-600 {
+  font-size: $fs-600;
+}
+
+.fs-400 {
+  font-size: $fs-400;
+}
+
+.fs-300 {
+  font-size: $fs-300;
+}
+
+.hideElement {
+  display: none !important;
+}
+
+.showElement {
+  display: initial;
 }

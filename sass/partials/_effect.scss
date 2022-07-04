@@ -28,3 +28,62 @@
     border-color: #cd5e77;
   }
 }
+
+/* logo */
+#ramme {
+  animation: moveRight 1s linear forwards;
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+#rektangel {
+  opacity: 0;
+  animation: moveDown 1s linear forwards;
+  animation-delay: 2s;
+}
+
+@keyframes moveDown {
+  from {
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#L,
+#T,
+#B {
+  opacity: 0;
+  animation: show 3s ease-in forwards;
+}
+
+#L {
+  animation-delay: 3s;
+}
+
+#T {
+  animation-delay: 4s;
+}
+
+#B {
+  animation-delay: 5s;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -2,11 +2,14 @@
   --gap: 1.5rem;
   list-style: none;
 
+  &__logo {
+    width: 60px;
+  }
+
   &__header {
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
-    // border-bottom: 1px solid rgba(0, 0, 0, 0.348);
+    padding: 0rem 1.5rem;
   }
 
   &__brand {
@@ -60,7 +63,7 @@
     &__button {
       position: fixed;
       z-index: 2000;
-      top: 1rem;
+      top: 2rem;
       right: 1rem;
     }
 
@@ -121,64 +124,3 @@
     padding-inline: clamp(1rem, 4vw, 3.5rem);
   }
 }
-// .navbar {
-//   height: 10vh;
-// }
-
-// .navbar__brand {
-//   color: black;
-// }
-
-// .navbar__brand:hover {
-//   color: black;
-// }
-
-// .navbar__link {
-//   font-family: "Merriweather", serif;
-//   font-weight: 300;
-//   color: black;
-//   display: inline-block;
-//   position: relative;
-//   padding: 0px !important;
-//   margin-left: 0rem !important;
-//   margin-right: 0rem !important;
-// }
-
-// @media (min-width: 576px) {
-//   .navbar__link {
-//     margin-left: 0.5rem !important;
-//     margin-right: 0.5rem !important;
-//   }
-// }
-
-// .navbar__link::before {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
-//   width: 0;
-//   height: 4px;
-//   background-color: #ffddee;
-//   transition: width 0.25s ease-out;
-// }
-
-// .navbar__link:hover::before {
-//   width: 100%;
-// }
-// .navbar__link:hover {
-//   color: black;
-// }
-
-// .navbar__link-active {
-//   font-weight: 400;
-// }
-
-// .navbar__link-active::before {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
-//   width: 100%;
-//   height: 4px;
-//   background-color: #ffddee;
-// }

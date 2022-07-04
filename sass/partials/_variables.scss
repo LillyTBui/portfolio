@@ -1,0 +1,25 @@
+$ff-sans-normal: "Open Sans", sans-serif;
+$ff-serif-heading: "Playfair Display", serif;
+$ff-sans-sub-heading: "Josefin Sans", sans-serif;
+
+$fs-300: 1rem;
+$fs-400: 0.9375rem;
+$fs-600: 1rem;
+$fs-700: 1.5rem;
+
+$dark-colour-primary: #121212;
+$dark-colour-secondary: #797979;
+
+@media (min-width: 35em) {
+  $fs-700: 2rem;
+  $fs-600: 1.5rem;
+  $fs-400: 1rem;
+}
+
+@media (min-width: 45em) {
+  $fs-600: 2rem;
+  $fs-400: 1.125rem;
+}
+
+$primary-color-desaturated: hsl(0, 36%, 70%);
+$primary-color: hsl(0, 93%, 68%);
