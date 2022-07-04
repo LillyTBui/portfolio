@@ -1,6 +1,6 @@
 const navButton = document.querySelector(".primary-navigation__button");
 const nav = document.querySelector(".primary-navigation");
-const logo = document.querySelector(".logo");
+const logo = document.querySelector(".primary-navigation__logo");
 const mainElement = document.querySelector("#main");
 
 navButton.addEventListener("click", () => {

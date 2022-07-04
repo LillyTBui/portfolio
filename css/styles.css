@@ -88,7 +88,7 @@ p {
 h1,
 h2,
 a {
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h3,
@@ -164,7 +164,6 @@ a:hover {
 .primary-navigation__link {
   text-decoration: none;
   letter-spacing: 1px;
-  font-weight: 600;
   color: black;
   text-transform: uppercase;
   padding-bottom: 0.5rem;
@@ -344,7 +343,6 @@ a:hover {
 
 .card__title {
   margin-top: 1rem;
-  font-weight: bold;
 }
 
 .card__text {
@@ -660,10 +658,6 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.jumbotron__title {
-  font-weight: 700;
 }
 
 .jumbotron__subtitle {
