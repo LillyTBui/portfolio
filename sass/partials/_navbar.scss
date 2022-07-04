@@ -121,5 +121,9 @@
 @media (min-width: 35em) {
   .primary-navigation {
     padding-inline: clamp(1rem, 4vw, 3.5rem);
+
+    &__logo-wrapper {
+      padding-inline: clamp(1rem, 4vw, 3.5rem);
+    }
   }
 }

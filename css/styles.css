@@ -273,6 +273,9 @@ a:hover {
   .primary-navigation {
     padding-inline: clamp(1rem, 4vw, 3.5rem);
   }
+  .primary-navigation__logo-wrapper {
+    padding-inline: clamp(1rem, 4vw, 3.5rem);
+  }
 }
 
 /* cards */
@@ -490,11 +493,6 @@ a:hover {
   background-color: white;
   color: #cd5e77;
   border: 1px solid #cd5e77;
-}
-
-.contact__icons {
-  text-align: center;
-  margin-bottom: 2rem;
 }
 
 /* typer effect */
